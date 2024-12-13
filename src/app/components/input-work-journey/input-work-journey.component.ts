@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 export class InputWorkJourneyComponent {
   private readonly check:   string =    '✓';
   private readonly pencil:  string =    '✎';
+  // as a intern:
   journey:string = '6:00'
 
   @Output() journeyChange = new EventEmitter<string>();
