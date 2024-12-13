@@ -1,0 +1,18 @@
+<div class="box-areas">
+    <div class="box">
+        <div class="label">1st in</div>
+        <input placeholder="00:00" [(ngModel)]="in1" (blur)="updateFields()">
+    </div>
+    <div class="box grey">
+        <div class="label">1st out</div>
+        <input placeholder="00:00" [(ngModel)]="out1" (blur)="updateFields()">
+    </div>
+    <div class="box grey">
+        <div class="label">2nd in</div>
+        <input placeholder="00:00" [(ngModel)]="in2" (blur)="updateFields()">
+    </div>
+    <div class="box" [style.color]="colorResult">
+        <div class="label">2nd out</div>
+        <input [style.color]="colorResult" placeholder="..." [(ngModel)]="out2" disabled>
+    </div>
+</div>
